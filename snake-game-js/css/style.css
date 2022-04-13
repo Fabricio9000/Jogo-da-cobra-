@@ -1,0 +1,54 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .corpo {
+        background: url("../img/selva33.jpg");
+        background-size: 49.2vw 49.3vw;
+        background-repeat: repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 49.3vw;
+    }
+    
+    #pontuacao {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        font-size: 39px;
+        font-weight: bold;
+        font-family: fantasy;
+        color:rgb(75, 42, 165);
+    }
+    
+    #board {
+        width: 90vh;
+        height: 90vh;
+        background: linear-gradient(#55d849, #15a859);
+        border: 7px solid #000;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    .head {
+        background: linear-gradient(rgb(66, 14, 209), rgb(24, 0, 160));
+        border: solid rebeccapurple;
+        border-radius: 13px;
+    }
+    
+    .snake {
+        background: linear-gradient(rgb(66, 14, 209), rgb(24, 0, 160));
+        border: solid rgb(122, 235, 17);
+        border-radius: 13px;
+    }
+    
+    .fruta {
+        grid-row-start: 16;
+        grid-column-start: 16;
+        background: url("../img/maçadoourada.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
